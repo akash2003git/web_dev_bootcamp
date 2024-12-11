@@ -1,0 +1,57 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #52b69a;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+
+#middle {
+    background-color: #184e77;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+}
+/* static is the default position hence nothing happened */
+
+#relative #middle {
+    position: relative;
+    top: 25px;
+    right: 100px;
+}
+/* element is positioned relative to where it was initially */
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+}
+/* here the space that the element takes is removed 
+from the program flow and is positioned relaive to the 
+ancestor non-static element. */
+
+#fixed #middle {
+    position: fixed;
+    top: 700px;
+    left: 100px;
+}
+/* similar to absolute but position is not relative to any
+ancestor element but the but to the initial containing 
+block established by the viewport */
+/* can be used for a nav bar that stays on top of the screen
+as we scroll */
+
+/* sticky is again similar to fixed but it starts out 
+normally and as we scroll the page it then gets fixed, 
+so it's suitable when like an element is in the middle at
+start and then as we scroll down we want it to remain 
+on screen */
+
+

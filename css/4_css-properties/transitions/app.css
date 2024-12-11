@@ -1,0 +1,43 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: background-color 1s 1s, border-radius 2s;
+    /*you can add transition to specific property and also a delay */
+}
+
+.circle:hover {
+    background-color: cyan;
+    border-radius: 0%;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    border: 1px solid black;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+.square_section:hover .square {
+    margin-left: 500px;
+}
+
+.square:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+
+.square:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+
+.square:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+.square:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}

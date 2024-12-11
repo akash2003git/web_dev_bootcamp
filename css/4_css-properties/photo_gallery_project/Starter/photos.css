@@ -1,0 +1,24 @@
+img {
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+/*Now we have 30% taken by 3 images so 90% in total.
+We have 10% left. Each image has a left and right margin
+so 3 images will have 6 side margins. Therefore we will
+have to do 10/6 i.e. 1.66666. We use clac() func here*/
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*In the html file we have the img tags in line with each other
+and not each one in separate line. This is because in html
+the return is treated as a white space. */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="display-2">Forms</h1>
+
+
+        <form action="#nowhere">
+            <div class="row g-2">
+            <!-- g-2 is for spacing between the two col elements -->
+            <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="form-group col-sm-4">
+                    <label for="state">State</label>
+                    <select class="form-select" name="state" id="state">
+                        <option value="MH">Maharashtra</option>
+                        <option value="RJ">Madhya Pradesh</option>
+                        <option value="MP">Rajasthan</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="state" placeholder="Nagpur">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" class="form-control" id="zip" placeholder="440290">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Plot no.120, Gajanan Road">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="tos">
+                <label class="form-check-label" for="tos">
+                  Agree to terms and conditions.
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Register</button>
+            </div>
+              
+        </form>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

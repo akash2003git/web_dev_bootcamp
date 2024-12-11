@@ -1,0 +1,72 @@
+html {
+    font-size: 30px;
+}
+
+#percentages {
+    background-color: #4ea8de;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #80ffdb;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems {
+    font-size: 20px;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #7400b8;
+    color: white;
+}
+
+ul {
+    font-size: 1.5em;
+    /* em here is not suitable as we have nested ul's
+    hence size decreases or increases exponentially */
+}
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems p {
+    font-size: 1rem;
+}
+
+#rems ul {
+    font-size: 1rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}

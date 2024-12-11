@@ -1,0 +1,15 @@
+.pokemon {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+}
+.pokemon img {
+    display: block;
+    margin: 0 auto;
+
+}
+.pokemon span {
+    display: block;
+    text-align: center;
+}

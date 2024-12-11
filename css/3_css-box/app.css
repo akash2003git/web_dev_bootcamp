@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+/* By default the margin is 8px.
+It is commonly turned off right at the start. */
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e1dd;
+}
+
+.title {
+    background-color: #778da9;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* padding is the space between content and border */
+
+#one {
+    background-color: #e0e1dd;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* box-sizing: border-box;  */
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+/* border-box sets the width of the element to go from border to border
+meaning adding border will not increase the size of the element. 
+For example here our div is set to 200px by 200px.
+After adding the border it is 210px by 210px.
+But after adding border-box the border takes the inside of the box
+instead of outside and hence the element's size is constant.*/
+
+#two {
+    background-color: #778da9;
+    border-width: 3px;
+    border-color: #415a77;
+    border-style: dashed;
+    border-left-color: #0d1b2a;
+    border-left-width: 7px;
+}
+
+#three {
+    background-color: #415a77;
+    border: 5px solid black;
+    border-radius: 50%
+}
+
+button {
+    /* padding: 20px; */
+    /* padding: 10px 20px; */
+    padding: 10px 20px 30px 40px;
+}
+
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline;
+    /*now h1 is an inline element instead of a block level*/
+    /* display: none; */
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block;
+    /*now span is block isntead of inline*/
+}
+
+.demo_span {
+    background-color: pink;
+    border: 1px solid black;
+    display: inline;
+    /*it was inheriting the "block" from above*/
+    width: 500px;
+    /*if element has inline dispaly the width, height, etc. is ignored*/
+    padding: 50px;
+    /*interesting behaviour. padding is "kinda" respected*/
+    margin: 50px;
+    /*only respected by the inline words horizontally*/
+}
+
+/*Inline: Width and height are ignored. Margin and padding push
+elements away horizontally but not vertically*/
+/* Block: Block elements break the flow of a document. Width, height,
+margin, and padding are respected*/
+/* Inline-block: Behaves like and inline element except width, height, margin
+and padding are respected.  */
+
+
+/*this will f up the divs above so when revising comment this thing out*/
+.shape {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+    /*here we have a block element that behaves like an inline except
+    the width, height, margin and padding is respected.*/
+}

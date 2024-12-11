@@ -1,0 +1,89 @@
+/* * {
+    background-color: rgb(169, 252, 224);
+} */
+
+body {
+    background-color: #fdf0d5;
+}
+
+h1, h2 {
+    color: #003049;
+}
+
+button {
+    font-size: 15px;
+    color: #fdf0d5;
+    background-color: #780000;
+}
+
+#signup {
+    background-color: #003049;
+    color: 669bbc;
+}
+
+span {
+    color: #780000;
+}
+
+.tag {
+    background-color: #c1121f;
+    color: #fdf0d5;
+    font-size: 15px;
+}
+
+.post a {    /*all anchor tags inside of "post" class.*/
+    color: #c1121f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a {
+    color: #003049;
+}
+
+h2 + button { /*button immediately after an h2*/
+    background-color: #780000;
+}
+
+footer > a { /*All a that are direct child/descendant of footer*/
+    color: #c1121f;
+}
+
+input[type="password"] {
+    color: #c1121f;
+}
+
+.post button:hover {  /*Button inside of a "post" class is being hovered*/
+    background-color: #c1121f;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #003049;
+}
+
+.post:nth-of-type(even) { /*every other (in this case even number) "post" class*/
+    background-color: #f7e2ba;
+}
+
+h2::first-letter { /*first letter of all h2*/
+    font-size: 40px;
+}
+
+::selection { /*every selected content on the page will have the property*/
+    background-color: #669bbc;
+}
+
+/*specitivity : id > class > element (read from left to right for score)*/
+/*u can also use https://specificity.keegan.st/*/
+/*one more thing that is more specific than id is the inline styles
+(i.e. the styles you directly use in the html code itself), they are
+usaually not used*/
+/* "!important" used in css is also one more thing that breaks the 
+system and is generally not used */
+/*"color: inherit" --> example for some inputs who don't inherit 
+properties form parent*/
+

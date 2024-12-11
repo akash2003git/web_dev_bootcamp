@@ -1,0 +1,81 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* align-content: space-between; */
+}
+
+/* 
+Flex box works on the concept of a  
+X(main) and Y(cross) axis
+main is left to right
+cross is top to bottom
+Flex box by default has
+flex-direction: row;
+justify-content: flex-start;
+flex-wrap: nowrap;
+align-items: flex-start;
+changing the flex-direction also changes behaviour of
+other properties
+*/
+/* Align content only works with flex-wrap: wrap; */
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 600px;
+    /* flex-grow: 1; */
+    /* max-width: 300px; */
+}
+
+/* div:nth-of-type(3) {
+    align-self: center;
+} */
+/* align-self is similar to align-items but only used 
+for single elements */
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+}
+div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+/*flex-grow accepts a unitless value and works on 
+concept of ratio. here 5 will take twice the space as 1*/
+/*flex-shrink works on the same concept*/
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    flex: 1 2 300px;
+    border: 2px solid white;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 800px;
+}
