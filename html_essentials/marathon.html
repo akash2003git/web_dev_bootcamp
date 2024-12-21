@@ -1,56 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marathon Registration</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Race Registration!</h1>
 
     <form action="/race">
-
+      <fieldset>
+        <legend style="font-weight: bold">Registration Form</legend>
         <p>
-            <label for="first">First name: </label>
-            <input type="text" id="first" name="first" required>
-            <label for="last">Last name: </label>
-            <input type="text" id="last" name="last" required>
+          <label for="first">First name: </label>
+          <input type="text" id="first" name="first" required />
+          <label for="last">Last name: </label>
+          <input type="text" id="last" name="last" required />
         </p>
 
         <p>Select a Race:</p>
         <p>
-            <input type="radio" id="5k" value="5k" name="race">
-            <label for="5k">Fun Run 5k</label>
+          <input type="radio" id="5k" value="5k" name="race" />
+          <label for="5k">Fun Run 5k</label>
         </p>
         <p>
-            <input type="radio" id="half" value="half" name="race">
-            <label for="half">Half Marathon</label>
+          <input type="radio" id="half" value="half" name="race" />
+          <label for="half">Half Marathon</label>
         </p>
         <p>
-            <input type="radio" id="full" value="full" name="race">
-            <label for="full">Full Marathon</label>
-        </p>
-
-        <p>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password" required>
+          <input type="radio" id="full" value="full" name="race" />
+          <label for="full">Full Marathon</label>
         </p>
 
         <p>
-            <label for="age">Select Age Group: </label>
-            <select>
-                <option value="under 18">Under 18</option>
-                <option value="18+">18+</option>
-            </select>
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="password" required />
+        </p>
+
+        <p>
+          <label for="age">Select Age Group: </label>
+          <select>
+            <option value="under 18">Under 18</option>
+            <option value="18+">18+</option>
+          </select>
         </p>
 
         <button>Register</button>
-
+      </fieldset>
     </form>
-</body>
-
+  </body>
 </html>
+
