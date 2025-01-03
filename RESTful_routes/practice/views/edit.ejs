@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit</title>
+  </head>
+  <body>
+    <h1>Editing Tweet for id: <%=tweet.id%></h1>
+    <p><%=tweet.tweet%> - <b><%=tweet.username%></b></p>
+    <form method="post" action="/<%=tweet.id%>?_method=PATCH">
+      <textarea name="tweet" cols="30" rows="5">
+        <%=tweet.tweet%>
+      </textarea>
+      <button>Edit</button>
+    </form>
+    <a href="/">Back to index</a>
+  </body>
+</html>

@@ -39,6 +39,8 @@ let comments = [
   },
 ];
 
+// notice how we use /comments and comments in syntax
+
 app.get("/comments", (req, res) => {
   res.render("comments/index", { comments });
 });
