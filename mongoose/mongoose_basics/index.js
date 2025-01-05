@@ -37,7 +37,7 @@ const Movie = mongoose.model("Movie", movieSchema);
 // });
 // amadeus.save() // to save the movie in the db
 
-Movie.deleteMany({}).then(() => console.log("Collection cleared!"));
+//Movie.deleteMany({}).then(() => console.log("Collection cleared!"));
 Movie.insertMany([
   { title: "Amelie", year: 2001, score: 8.3, rating: "R" },
   { title: "Alien", year: 1979, score: 8.1, rating: "R" },
