@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Pet</title>
+  </head>
+  <body>
+    <h1>Add a new pet</h1> 
+    <form action="/pets" method="POST">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" placeholder="pet name">
+      <br>
+      <br>
+      <label for="price">Price: </label>
+      <input type="text" id="price" name="price" placeholder="price">
+      <br>
+      <br>
+      <label for="category">Category: </label>
+      <select name="category" id="category">
+        <% for( let category of categories ) { %>
+          <option value="<%=category%>"><%=category%></option>
+        <% } %>
+      </select>
+      <br>
+      <br>
+      <button>Submit</button>
+    </form>
+    <a href="/pets">Cancel</a>
+  </body>
+</html>
