@@ -6,10 +6,10 @@
     <title>Pets</title>
   </head>
   <body>
-    <h1>All Pets</h1> 
+    <h1><%= category %> Pets</h1> 
     <ul>
       <% for (let pet of pets) { %>
-        <li> <%= pet.name %> </li>
+        <li><a href="/pets/<%=pet.id%>"> <%= pet.name %> </a></li>
       <% } %> 
     </ul>
     <a href="/pets/new">Add a new pet</a>
