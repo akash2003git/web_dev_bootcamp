@@ -1,0 +1,12 @@
+.ColorBox {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.ColorBoxes {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  width: max-content;
+}
