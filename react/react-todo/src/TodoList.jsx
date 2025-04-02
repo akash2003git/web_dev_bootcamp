@@ -67,8 +67,8 @@ export default function TodoList() {
             toggle={() => toggleTodo(todo.id)} // method 2
           />
         ))}
-        <TodoForm add={addTodo} />
-      </List>{" "}
+      </List>
+      <TodoForm add={addTodo} />
     </Box>
   );
 }

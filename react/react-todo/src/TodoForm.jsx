@@ -26,6 +26,7 @@ export default function TodoForm({ add }) {
           variant="outlined"
           value={text}
           onChange={handleChange}
+          fullWidth
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
